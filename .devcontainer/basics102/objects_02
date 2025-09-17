@@ -1,0 +1,17 @@
+const syn = Symbol("key1");  // creating a unique symbol
+
+const jsUser = {
+    name: "raksha",
+    "fullname": "rakshaHG",
+    [syn]: "key1",           // using symbol as a key [syn] → symbol keys cannot be accessed like a string. You’d have to do:
+    age: 21,
+    location: "mysuru",
+    email: "raksha.g5155@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ['monday', 'saturday']
+}
+
+console.log(jsUser.email);        // raksha.g5155@gmail.com
+console.log(jsUser["fullname"]);  // rakshaHG
+console.log(jsUser["email"]); 
+console.log(typeof syn) ;   
