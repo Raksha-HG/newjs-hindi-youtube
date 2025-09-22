@@ -1,4 +1,34 @@
-<style>
-  .bg-black { background-color: black; color: white; padding: 20px; }
-  .heading { font-family: Arial, sans-serif; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning - Raksha-HG DOM_06</title>
+    <style>
+        .bg-black { 
+            background-color: black; 
+            color: white; 
+            padding: 20px; 
+            font-family: Arial, sans-serif;
+        }
+        .heading {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM Learning on Chai aur Code<span style="display:none" >Test Text</span></h1>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quasi doloremque alias voluptatibus eum debitis laborum repellat, aliquid necessitatibus accusamus? Porro magni officia totam? Doloribus aspernatur dolorum earum dolor ipsa?
+        </p>
+    </div>
+
+    <script>
+        // Change the heading text dynamically
+        document.getElementById('title').textContent = "Chai Aur Code - Raksha-HG DOM_06";
+    </script>
+</body>
+</html>
+
