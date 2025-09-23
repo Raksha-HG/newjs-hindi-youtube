@@ -36,10 +36,13 @@
 
  //Edit
 
- const firstlang=document.querySelector('.language');
- console.log(firstlang);
- const nL=document.createElement('li');
- li.textContent='LangScript';
- firstlang.replaceWith(nL);
+ const firstlang = document.querySelector('li:nth-child(1)');
+console.log(firstlang);
+
+const nL = document.createElement('li');
+nL.textContent = 'LangScript';
+
+firstlang.replaceWith(nL);
+
 </script>
 </html>
