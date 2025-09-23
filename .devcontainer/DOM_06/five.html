@@ -15,10 +15,23 @@
 <script>
     function addLanguage(langName){
       const li=  document.createElement('li');
-      li.innerHTML=`${langName}`
+      li.textContent=`${langName}`
+        document.querySelector('.language').appendChild(li);
+        
+    }
+    addLanguage("Java");
+
+    function addOptiLang(lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(`${lang}`));
         document.querySelector('.language').appendChild(li);
 
     }
-    addLanguage(Java);
+    addOptiLang("CSS");
+//EDIT
+ const seondLang=Document.querySelector('li:nth-child(2)');
+ const newli=document.createElement('li');
+ newli.textContent='OPPs';
+ seondLang.replaceWith(newli);
 </script>
 </html>
