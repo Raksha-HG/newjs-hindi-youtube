@@ -35,14 +35,14 @@
  seondLang.replaceWith(newli);
 
  //Edit
-
- const firstlang = document.querySelector('li:nth-child(1)');
+const firstlang = document.querySelector('li:first-child');
 console.log(firstlang);
 
-const nL = document.createElement('li');
-nL.textContent = 'LangScript';
+firstlang.outerHTML = '<li>Jango</li>';  // ✅ must be a string
 
-firstlang.replaceWith(nL);
+//REmove
 
+const lastLang=document.querySelector('li:last-child');
+lastLang.remove();
 </script>
 </html>
